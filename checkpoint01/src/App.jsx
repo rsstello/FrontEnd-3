@@ -10,7 +10,6 @@ function App() {
       hexadecimal: ""
     }
   );
-  
 
   const [card, setCard] = useState(
     [
