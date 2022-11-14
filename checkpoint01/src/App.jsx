@@ -11,7 +11,6 @@ function App() {
     }
   );
   
-  const [error,setError] = useState();
 
   const [card, setCard] = useState(
     [
@@ -23,7 +22,6 @@ function App() {
     event.preventDefault();
 
     if(cor.nome.length < 3 || cor.hexadecimal.length != 7){
-      setError("Dados errados");
       alert("Por favor, verifique os dados inseridos no formulário.");
     }else{   
       setCard([...card, 
@@ -33,7 +31,6 @@ function App() {
         }
       ])
 
-      setError("");
       setCor(
         {
           nome: "", 
@@ -56,7 +53,6 @@ function App() {
             placeholder="Digite o valor hexadecimal (ex: #003153)"/>
           <input className="formButton" type="submit" onClick={handleSubmit} />
         </form>
-        <span className='errorLine'>{error}</span>
       </div>
 
         <h1>CORES ADICIONADAS RECENTEMENTE</h1>
