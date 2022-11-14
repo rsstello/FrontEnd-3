@@ -24,7 +24,7 @@ function App() {
 
     if(cor.nome.length < 3 || cor.hexadecimal.length != 7){
       setError("Dados errados");
-      alert("Dados enviados não estão corretos. Digite o nome da cor e o hexadecimal com # mais os 6 dígitos.");
+      alert("Por favor, verifique os dados inseridos no formulário.");
     }else{   
       setCard([...card, 
         {
